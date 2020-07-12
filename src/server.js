@@ -1,4 +1,4 @@
 const app = require('./app');
 
-var porta = 6666;
+var porta = 3131;
 app.listen(porta);
