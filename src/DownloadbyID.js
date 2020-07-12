@@ -1,4 +1,4 @@
-const T  = require('./twitConfig');
+const T  = require('./twitconfig');
 const functions = require("./functions");
 
 module.exports = {
