@@ -13,7 +13,9 @@ module.exports = {
                             for (var i = 0; i < media.video_info.variants.length; i++) {   
                                 var variants = media.video_info.variants[i];      
                                 
-                                var extensao = retornaExtensaoArquivo(variants)
+                                var extensao = retornaExtensaoArquivo(variants);
+
+                                console.log(tweet);
                 
                                 if (extensao) {
                                     const file = fs.createWriteStream(caminho+dateFormat(new Date(), "yyyymmddHHMMss")+"-"+tweet.user.screen_name+

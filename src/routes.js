@@ -1,8 +1,8 @@
 const express = require('express');
-const DownloadbyID = require('./DownloadbyID');
+const twitterController = require('./twitterController');
 
 const routes = express.Router();
 
-routes.get('/baixarvideo/:id', DownloadbyID.index);
+routes.get('/baixarvideo/:id', twitterController.downloadTweet);
 
 module.exports = routes;
