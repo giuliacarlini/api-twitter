@@ -1,8 +1,8 @@
 const express = require('express');
-const botDownload = require('./botDownloadMP4Copy');
+const DownloadbyID = require('./DownloadbyID');
 
 const routes = express.Router();
 
-routes.get('/baixarvideo/:id', botDownload.index);
+routes.get('/baixarvideo/:id', DownloadbyID.index);
 
 module.exports = routes;
