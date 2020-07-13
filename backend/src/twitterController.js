@@ -18,11 +18,17 @@ module.exports = {
     var data = await init();
 
     if (data == 144) {
-      return response.status(401).json({error : "144 - Sem status para esse ID"});    
-    } else {
-      var urls = functions.DownloadTweet(data, caminho, false);
+      return response.status(404).json({error : "144 - Sem status para esse ID"});    
+    }; 
+
+    var urls = functions.DownloadTweet(data, caminho, false);
+
+    if (urls) {
       return response.status(200).json(urls);    
-    }       
+    } else {
+      return response.status(500).send();  
+    }
+      
   }
 }
 
