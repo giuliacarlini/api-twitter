@@ -1,0 +1,37 @@
+.download-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.download-container  form{
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+.download-container  form h1{
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.download-container  form button{
+    margin-left: 15px;
+}
+
+.download-container ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    list-style: none;
+}
+
+.download-container ul li {
+    background: rgb(144, 233, 214);
+    padding: 24px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.video {
+
+}
